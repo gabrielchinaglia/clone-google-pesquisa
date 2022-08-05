@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 24
+}
+  
+header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    padding: 10px;
+    width: calc(100% - 20px);
+    height: 42px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #70757a;
+}
+
+.container__left,
+.container__right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo {
+    padding: 2px 20px 2px 20px;
+}
+
+.logo__a {
+    display: flex;
+    align-items: center;
+}
+
+.logo__img {
+    height: 32px;
+}
+
+.first,
+.second {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.avatar {
+    margin-left: 8px;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.avatar img{
+    display: block;
+    padding: 5px 5px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.apps {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    color: #5f6368;
+    border-radius: 50%;
+}
+.apps:hover,
+.avatar:hover {
+    background-color: rgba(60,64,67,.08);
+    cursor: pointer;
+}
+
+header a {
+    color: rgba(0, 0, 0, 0.9);
+    text-decoration: none;
+}
+header a:hover {
+    text-decoration: underline;
+}
+
+section {
+    height: 100vh;
+}
+
+.pesquisa {
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.pesquisa-box {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+    border-radius: 22px;
+    padding: 0 8px;
+}
+.pesquisa-box:hover {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(31, 32, 35, 0.278);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+.box-1,
+.box-2 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.box-1 {
+    padding-left: 8px;
+}
+
+.box-2 {
+    color: #5f6368;
+}
+
+.lupa,
+.limpar,
+.teclado,
+.voz {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.lupa,
+.voz {
+    color: #4285f4;
+}
+
+.limpar {
+    padding: 0 12px;
+    margin-right: 8px;
+    border-right: 1px solid #dfe1e5;
+}
+
+.pesquisa-box input {
+    font-size: 16px;
+    border: none;
+    height: 30px;
+    min-width: 480px;
+}
+.pesquisa-box input:focus-visible {
+    outline: none;
+}
+
+footer {
+    width: 100%;
+    background-color: #f2f2f2;
+    color: #70757a;
+    position: absolute;
+    bottom: 0px;
+}
+
+
+.footer-1 {
+    padding: 15px 30px;
+    font-size: 15px;
+    border-bottom: 1px solid #dadce0;
+}
+
+.footer-2 {
+    font-size: 14px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-2 a {
+    display: inline-block;
+    color: #70757a;
+    padding: 15px;
+    text-decoration: none;
+}
+.footer-2 a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 425px) {
+
+    .first {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        height: 42px;
+        align-items: center;
+    }
+
+    .menu-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 25px;
+        height: 20px;
+        margin: 0 10px;
+    }
+
+    .mm-line {
+        height: 2px;
+        background-color: #70757a;
+    }
+
+    .options {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .all,
+    .images {
+        display: flex;
+        padding: 0 10px;
+        margin: 0 5px;
+        height: 100%;
+        align-items: center;
+    }
+
+    .active {
+        border-bottom: 2px solid #4285f4;
+    }
+
+}
+
+@media (max-height: 600px) and (orientation: landscape) {
+
+    footer {
+        position: relative;
+    }
+
+}
